@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 05 - Form Biodata</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend><b>Form Pendaftaran Mahasiswa</b></legend>
+            <table>
+                <tr>
+                    <td>NIM</td>
+                    <td>:</td>
+                    <td><input type="text" name="nim" placeholder="Masukkan NIM"></td>
+                </tr>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" name="nama" placeholder="Masukkan Nama Lengkap"></td>
+                </tr>
+                <tr>
+                    <td>Tempat, Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="tempat_lahir" size="15">
+                        <input type="date" name="tgl_lahir">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                        <input type="radio" name="jk" value="Perempuan"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>:</td>
+                    <td>
+                        <select name="prodi">
+                            <option value="">-- Pilih Program Studi --</option>
+                            <option value="SI">Sistem Informasi (S1)</option>
+                            <option value="TI">Teknik Informatika (S1)</option>
+                            <option value="DKV">Desain Komunikasi Visual (S1)</option>
+                            <option value="MI">Manajemen Informatika (D3)</option>
+                            <option value="TS">Teknik Sipil (S1)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobi / Minat</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="hobi" value="Coding"> Pemrograman
+                        <input type="checkbox" name="hobi" value="IoT"> IoT & Robotika
+                        <input type="checkbox" name="hobi" value="Desain"> Desain Grafis
+                        <input type="checkbox" name="hobi" value="Game"> Gaming
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><textarea name="alamat" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" value="Simpan">
+                        <input type="reset" value="Batal">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
